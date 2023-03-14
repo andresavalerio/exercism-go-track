@@ -2,6 +2,7 @@ package lasagna
 
 
 const OvenTime = 40
+const timePerLayer = 2
 
 
 func RemainingOvenTime(actualMinutesInOven int) int {
@@ -10,7 +11,6 @@ func RemainingOvenTime(actualMinutesInOven int) int {
 
 
 func PreparationTime(numberOfLayers int) int {
-	const timePerLayer = 2
 	return numberOfLayers * timePerLayer
 }
 
